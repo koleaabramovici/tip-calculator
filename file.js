@@ -1,13 +1,16 @@
-function calculate(){
 let totalBill = document.getElementById('bill').value;
-let serviceLvl = document.getElementById('serviceLvl').value;
-let guests = document.getElementById('people').value;
-
-let total = (totalBill * serviceLvl) / guests;
- document.getElementById('tip').innerHTML = total;
-}
-
+let serviceLvl = document.getElementsByName('tip');
+let guests = document.getElementById('people');
+let tip = document.getElementById('tip');
 
 document.getElementById('calculate').onclick = function(){
-  calculate();
-}
+for(let i=0; i < serviceLvl.length; i++){
+  if(serviceLvl[i].checked){
+    tip.innerHTML = (totalBill * serviceLvl[i]) / guests;
+  }
+ }
+};
+
+
+
+
