@@ -1,0 +1,26 @@
+#container {
+  width: 300px;
+  border: 1px solid rgb(238, 231, 231);
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  margin: 150px 0px 0px 490px;
+  background-color: rgb(114, 111, 111);
+  opacity: 0.8;
+  font-style: inherit;
+  color: white;
+}
+#calculate {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(57, 151, 13);
+  font-size: 20px;
+  color: rgb(250, 245, 245);
+}
+.finalTip {
+  font-size: 25px;
+}
+body {
+  background-image: url("img.jpeg");
+  background-size: cover;
+}
